@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div, pre{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  height: 80px;
+  background-color: rgb(0, 255, 255);
+}
+
+
+main {
+  height: 12200px;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0;
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(0, 10, 100);
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.heading {
+  padding: 30px 0 10px;
+  font-size: 30px
+}
+
+table, td {
+  border: 1px solid;
+}
+
+.column {
+  text-align: center;
+  font-weight: bold;
+}
+
+.gyou {
+  padding: 3px;
+}
+
+.tag {
+  color:rgb(0, 10, 100);
+  text-align: left;
+  width: 170px;
+}
+
+.closed-tag {
+  text-align: center;
+}
+
+.block-or-inline {
+  text-align: center;
+  width: 90px;
+}
+
+.type {
+  text-align: left;
+  padding: 5px;
+  width: 150px;
+}
+
+.comment {
+  text-align: left;
+  width: 500px;
+  padding: 5px;
+}
+
+.shousai-page {
+  text-align: center;
+}

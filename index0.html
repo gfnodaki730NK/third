@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML基本構造＆タグ一覧</title>
+
+    <link rel="stylesheet" href="stylesheet0.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>◆HTMLの基本構造</h1>
+        <pre>
+
+
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+    
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;タイトル&lt;/title&gt;
+
+            &lt;/head&gt;
+
+            &lt;body&gt;
+
+            &lt;/body&gt;
+          &lt;/html&gt;
+
+
+        </pre>
+
+        <h1>◆HTMLタグ一覧</h1>
+        <h3 class="heading">◎基本構造</h3>
+          <table>
+            <tr class="column">
+              <td>タグ</td>
+              <td class="gyou">終了<br>タグ</td>
+              <td class="gyou">要素</td>
+              <td>属性</td>
+              <td>概要</td>
+              <td class="gyou">用法・詳細</td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;!DOCTYPE html&gt;<br>　※タグではない</td>
+              <td class="closed-tag">×</td>              
+              <td class="block-or-inline">-</td>
+              <td class="type">-</td>
+              <td class="comment">HTMLのバージョンを指定するための宣言<br>HTML5を使用するには&lt;!DOCTYPE html&gt;と記述する</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;html&gt;<br>　&lt;/html&gt;</td>
+              <td class="closed-tag">○</td>
+              <td class="block-or-inline">-</td>
+              <td class="type">・lang<br>・Manifest</td>
+              <td class="comment">htmlファイルとして記述する<br>&lt;html&gt;タグ内に&lt;head&gt;要素、&lt;body&gt;要素を記述する</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;head&gt;<br>　&lt;/head&gt;</td>
+              <td class="closed-tag">○</td>
+              <td class="block-or-inline">-</td>
+              <td class="type">・profile</td>
+              <td class="comment">ページに関する情報を記述する<br>中身には文字化け防止の&lt;meta&gt;タグ要素、ページのタイトル名を記述する&lt;title&gt;タグ要素、cssファイルや外部ファイルの読み込むには、&lt;head&gt;タグ内に記述する</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;body&gt;<br>　&lt;/body&gt;</td>
+              <td class="closed-tag">○</td>
+              <td class="block-or-inline">-</td>
+              <td class="type">・background<br>・bgcolor<br>・text<br>・link<br>・vlink<br>・alink<br>・onLoad<br>・onUnload</td>
+              <td class="comment">表示したい内容を記述する</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;comment&gt;<br>　&lt;/comment&gt;</td>
+              <td class="closed-tag">○</td>              
+              <td class="block-or-inline">-</td>
+              <td class="type">-</td>
+              <td class="comment">HTMLソースの中にコメントを記述する<br>commentタグで囲まれた部分はブラウザには表示されない<br>&lt;!-- --&gt;と機能は同じ</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+            <tr>
+              <td class="tag">・&lt;!--　--&gt;</td>
+              <td class="closed-tag">○</td>
+              <td class="block-or-inline">-</td>
+              <td class="type">-</td>
+              <td class="comment">HTMLソースの中にコメントを記述する<br>タグ内に記述したコメントはブラウザ上には表示されない</td>
+              <td class="shousai-page"><a href="#">用法・詳細</a></td>
+            </tr>
+          </table>
+
+        <h3 class="heading">◎ヘッダー</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;title&gt;<br>　&lt;/title&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・title</td>
+            <td class="comment">ページのタイトルを記述する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;base&gt;<br>　&lt;/base&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・href<br>・target</td>
+            <td class="comment">基準となるURI、リンク先の文書を表示させる方法を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;meta&gt;<br>　&lt;/meta&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・http-equiv<br>・name<br>・content<br>・scheme<br>・charset</td>
+            <td class="comment">文書情報を設定する、文字コード、文書の有効期限や<br>自動読み込みの設定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;link&gt;<br>　&lt;/link&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・rel<br>・rev<br>・href<br>・charset<br>・hreflang<br>・type<br>・media<br>・target<br>・Sizes</td>
+            <td class="comment">文書の前後関係などを定義する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;style&gt;<br>　&lt;/style&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・type<br>・media</td>
+            <td class="comment">スタイルシートを記述するためのタグ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;script&gt;<br>　&lt;/script&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・type<br>・src<br>・charset<br>・defer<br>・language</td>
+            <td class="comment">JavaScriptやVBScriptなどのスクリプトを文書内に埋め込んだり,<br>外部スクリプトを読み込んだりするために使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+        
+        <h3 class="heading">◎ページレイアウト</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;h1,2,3…6&gt;<br>　&lt;/h1,2,3…6&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">見出し文字、文字の大きさはh1が最大でh6が最小</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;hr&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・size<br>・width<br>・align<br>・noshade</td>
+            <td class="comment">横罫線を引く</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;br&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・clear</td>
+            <td class="comment">強制改行する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;nobr&gt;<br>　&lt;/nobr&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">-</td>
+            <td class="comment">改行を禁止する範囲を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;wbr&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">-</td>
+            <td class="comment">改行をしてもよい箇所を指定する<br>nobrタグの中で一部改行したい位置がある場合はwbrタグを使用する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;p&gt;<br>　&lt;/p&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align</td>
+            <td class="comment">段落を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;center&gt;<br>　&lt;/center&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">テキストや画像などのコンテンツを、水平方向の中央に<br>表示する際に使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;div&gt;<br>　&lt;/div&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align</td>
+            <td class="comment">囲った部分をブロック要素としてグループ化する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;span&gt;<br>　&lt;/span&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">インライン要素としてグループ化<br>グループ化することで、指定した範囲にスタイルシートを適用したりする</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;pre&gt;<br>　&lt;/pre&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・width</td>
+            <td class="comment">整形済みテキスト、htmlにて記述した改行やタブが<br>ブラウザ上でそのまま表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;blockquote&gt;<br>　&lt;/blockquote&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・cite</td>
+            <td class="comment">引用・転載文であることを示す<br>囲まれた部分は 上下に1行分のスペースが挿入され、左右も隙間を開けて表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;q&gt;<br>　&lt;/q&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・cite</td>
+            <td class="comment">「quotation」の略で、qタグで囲まれたテキストが引用・転載文<br>であることを示す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;listing&gt;<br>　&lt;/listing&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">-</td>
+            <td class="comment">preタグと同じ役割、HTML5では廃止されている</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;adress&gt;<br>　&lt;/adress&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">文書の連絡先や問い合わせ先を示す<br>イタリック体で表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;noscript&gt;<br>　&lt;/noscript&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">scriptタグと一緒に使用し、scriptタグに対応していない<br>ブラウザへのメッセージを記述する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+
+        <h3 class="heading">◎フォント</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;font&gt;<br>　&lt;/font&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・size<br>・color<br>・face</td>
+            <td class="comment">フォント（文字）の色や種類、大きさを指定する<br>HTML5では廃止予定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;basefont&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・size<br>・color<br>・face</td>
+            <td class="comment">フォント（文字）の色や種類、大きさなどの基準を指定する<br>終了タグがなく、次のbasefontタグまでが有効範囲</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;i&gt;<br>　&lt;/i&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">フォント（文字）をイタリック体にする</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;tt&gt;<br>　&lt;/tt&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">テキストを等幅フォントで表示する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;b&gt;<br>　&lt;/b&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">フォント（文字）を太字（bold）にする</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;u&gt;<br>　&lt;/u&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">フォント（文字）に下線（アンダーライン）を引く</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;s&gt;<br>　&lt;/s&gt;<br>・&lt;strike&gt;<br>　&lt;/strike&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">テキストに打ち消し線を引く</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;big&gt;<br>　&lt;/big&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">テキストを一回り大きくする</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;small&gt;<br>　&lt;/small&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">テキストを一回り小さくする</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;sub&gt;<br>　&lt;/sub&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">下付き文字で表示する、化学記号を表す際などに使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;sup&gt;<br>　&lt;/sup&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">上付き文字で表示する、乗算を表す際などに使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;em&gt;<br>　&lt;/em&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">強調を表す、Chromeでは斜体で表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;strong&gt;<br>　&lt;/strong&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">強調を表す、emタグよりもさらに強調、斜体で表示されない</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;ruby&gt;<br>　&lt;/ruby&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">文字にルビをふる際に使用する<br>rubyタグ内でルビをふる対象となる文字をrbタグで、<br>ルビの内容となるテキストをrtタグ、ルビの内容を囲む記号を<br>rpタグで指定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;rb&gt;<br>　&lt;/rb&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type"></td>
+            <td class="comment">文字にルビをふる際に使用する<br>ルビをふる対象となる文字を指定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;rt&gt;<br>　&lt;/rt&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type"></td>
+            <td class="comment">文字にルビをふる際に使用する<br>ルビの内容となるテキストを指定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;rp&gt;<br>　&lt;/rp&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type"></td>
+            <td class="comment">文字にルビをふる際に使用する<br>ルビの内容を囲む記号を指定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;blink&gt;<br>　&lt;/blink&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">文字を点滅させる際に使用する<br>携帯電話用のサイトに多く用いられているが、<br>パソコンのブラウザでは無視され普通のテキストとして表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;marquee&gt;<br>　&lt;/marquee&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・behavior<br>・bgcolor<br>・direction<br>・height<br>・hspace<br>・loop<br>・scrollamouut<br>・scrolldelay<br>・truespeed<br>・width</td>
+            <td class="comment">文字をスクロールする際に使用する<br>marqueeタグで囲まれた文字は、表示領域内中を動かすことができる。デフォルトでは右から左へスクロールする動作を繰り返し、<br>属性値の指定によりスクロール方向やスクロールの早さ、<br>スクロール回数を指定することも可能<br>blinkタグとともに主に携帯電話用のサイトに多く用いられているが、現在のパソコン用のサイトではほとんど使用されない</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;bdo&gt;<br>　&lt;/bdo&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・dir</td>
+            <td class="comment">文字の方向を指定する<br></td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;code&gt;<br>　&lt;/code&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">プログラムコードやHTMLやCSS、JavaScriptなどのコードを示す<br>囲んだテキストは、プログラムのソースコードであることを<br>意味する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;samp&gt;<br>　&lt;/samp&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">プログラムからの出力内容をサンプルとして提示する<br>確認メッセージやエラーメッセージなどの出力例を出したい際に<br>使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;kbd&gt;<br>　&lt;/kbd&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">ユーザーがキーボードなどから入力するテキストを示すために使用<br>等倍フォントで表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;var&gt;<br>　&lt;/var&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">プログラムコードの変数や因数を示す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;cite&gt;<br>　&lt;/cite&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">出典先のサイト・参照先を表す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;addr&gt;<br>　&lt;/addr&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・title</td>
+            <td class="comment">略語を示す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;acronym&gt;<br>　&lt;/acronym&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・title</td>
+            <td class="comment">addrタグと役割は同じ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;dfn&gt;<br>　&lt;/dfn&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">-</td>
+            <td class="comment">何らかの用語の意味を定義（解説）する際、文章中に出てくる<br>その定義用語の部分に対してこの要素を使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;ins&gt;<br>　&lt;/ins&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック、インライン</td>
+            <td class="type">・cite<br>・datetime</td>
+            <td class="comment">後から追加された部分を示す<br>文書を修正する際に、どの部分を追加したのかを示す場合に使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;del&gt;<br>　&lt;/del&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック、<br>インライン</td>
+            <td class="type">・cite<br>・datetime</td>
+            <td class="comment">後から削除された部分を示す<br>文書を修正する際に、どの部分を削除したのかを示す場合に使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;xmp&gt;<br>　&lt;/xmp&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type"></td>
+            <td class="comment">ソースコード中のスペースや改行を含むすべてをテキストで表示する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+
+        <h3 class="heading">◎リスト</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;ul&gt;<br>　&lt;/ul&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・type</td>
+            <td class="comment">順序がない箇条書きのリストを表示する際に使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;oi&gt;<br>　&lt;/ol&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・type<br>・start<br>・compact</td>
+            <td class="comment">順序のある番号付きのリストを表示する際に使用する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;menu&gt;<br>　&lt;/menu&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・type</td>
+            <td class="comment">メニューのような文字数が少ないリストを表示する<br>ulタグとタグと同様の効果</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;li&gt;<br>　&lt;/li&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・type<br>・value</td>
+            <td class="comment">リストの項目を表示するために使用する<br>ul要素、ol要素、menu要素の子要素として、リストは箇条書きで表記され<br>項目の間に順番や序列は発生しない</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;dl&gt;<br>　&lt;/dl&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">定義リストを表す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;dt&gt;<br>　&lt;/dt&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">dl要素の子要素で、定義語を表す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;dd&gt;<br>　&lt;/dd&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">dl要素の子要素で、定義の説明を表す</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;dir&gt;<br>　&lt;/dir&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">ulタグと同じ効果</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+        </table>
+
+        <h3 class="heading">◎表</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;table&gt;<br>　&lt;/table&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・border<br>・frame<br>・rules</td>
+            <td class="comment">tr、th、tdタグなどと組み合わせて表を作成するためのタグ<br>表の基本的な構造はtableタグの中にtrタグで表の横部分を指定し、<br>その中にthやtdタグで表題や縦軸を指定してセルを定義する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;caption&gt;<br>　&lt;/caption&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign</td>
+            <td class="comment">テーブルのタイトルを指定する<br>tableタグ内の子要素として使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;col&gt;<br>　&lt;/col&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・span<br>・align<br>・valign<br>・width</td>
+            <td class="comment">表の縦列の属性をまとめて指定したいときに使用する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;colgroup&gt;<br>　&lt;/colgroup&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・span<br>・align<br>・valign<br>・width</td>
+            <td class="comment">表の縦列の属性をまとめて指定したいときに使用する<br>カラムグループにはcolgroupタグを、グループの中の個々の<br>カラムについて指定したい場合はcolタグを使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;thead&gt;<br>　&lt;/thead&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff</td>
+            <td class="comment">表のヘッダー部分としてグループ化する<br>tableタグ内の子要素として使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;tbody&gt;<br>　&lt;/tbody&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff</td>
+            <td class="comment">表のボディ部分としてグループ化する<br>tableタグ内の子要素として使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;tfoot&gt;<br>　&lt;/tfoot&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff</td>
+            <td class="comment">表のフッター部分としてグループ化する<br>tableタグ内の子要素として使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;tr&gt;<br>　&lt;/tr&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff<br>・bgcolor<br></td>
+            <td class="comment">表の行部分（横方向）を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;th&gt;<br>　&lt;/th&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff<br>・colspan<br>・rowspan<br>・addr<br>・headers<br>・scope<br>・axis<br>・width<br>・height<br>・bgcolor<br>・nowrap</td>
+            <td class="comment">表の見出しやタイトルとなるヘッダーセルを作成する<br>テキストは太字かつセンタリングされる</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;td&gt;<br>　&lt;/td&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・align<br>・valign<br>・char<br>・charoff<br>・colspan<br>・rowspan<br>・addr<br>・headers<br>・scope<br>・axis<br>・width<br>・height<br>・bgcolor<br>・nowrap</td>
+            <td class="comment">テーブルセルの内容を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+          
+        </table>
+
+        <h3 class="heading">◎ハイパーリンク</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;a&gt;<br>　&lt;/a&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・href<br>・name<br>・charset<br>・hreflang<br>・type<br>・rel<br>・rev<br>・shape<br>・coords<br>・target<br>・download</td>
+            <td class="comment">リンクの出発点や到達点を指定する<br>リンクの出発点を示す場合は、href属性でリンク先を指定<br>到達点を示す場合はname属性やid属性を使用し、その場所の名前（識別子）を指定</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+        </table>
+
+        <h3 class="heading">◎画像・音声・動画</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;img&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・src<br>・alt<br>・longdesc<br>・name<br>・width<br>・height<br>・usemap<br>・align<br>・border<br>・hspace<br>・vspace</td>
+            <td class="comment">文書内に画像を表示する<br>src属性で指定し、WEB上ではGIF形式（.gif）、<br>JPEG形式（.jpg）、PNG形式（.png）の画像形式を指定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;map&gt;<br>　&lt;/map&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・name</td>
+            <td class="comment">1つの画像に複数のリンクを設定する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;area&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・ait<br>・shape<br>・coords<br>・href<br>・nohref<br>・target<br>・hreflang<br>・type<br>・rel<br>・download</td>
+            <td class="comment">mapタグで設定されたリンクの領域を設定する<br>mapタグの子要素として使用</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;object&gt;<br>　&lt;/object&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・data<br>・type<br>・classid<br>・codetype<br>・archive<br>・width<br>・height<br>・usemap<br>・name<br>・standby<br>・declare<br>・align<br>・border<br>・hspace<br>・vspace<br>・typemustmatch</td>
+            <td class="comment">画像や動画、音声、プラグインデータ、HTML文書などの<br>さまざまな形式を持つデータを文書に埋め込むための<br>汎用的なタグ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;param&gt;<br>　&lt;/param&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・name<br>・value<br>・valuetype<br>・type</td>
+            <td class="comment">オブジェクトの実行に必要な設定値であるパラメータを指定する<br>objectタグ内で使用する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;bgsound&gt;</td>
+            <td class="closed-tag">×</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・src<br>・loop<br>・balance<br>・volumn</td>
+            <td class="comment">ページを開いた際に音楽を流すかどうかを指定する<br>代替としてaudioタグやenbedタグを使用することが推奨</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;embed&gt;<br>　&lt;/embed&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・src<br>・type<br>・name<br>・width<br>・height<br>・hspace<br>・vspace<br>・align</td>
+            <td class="comment">文書内に音声や動画などのデータを埋め込む</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;noembed&gt;<br>　&lt;/noembed&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type"></td>
+            <td class="comment">embedタグに対応していないブラウザに対して、代替するテキストなどを表示するためのタグ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+
+        <h3 class="heading">◎フォーム</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;form&gt;<br>　&lt;/form&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">・action<br>・method<br>・enctype<br>・accept-charset<br>・accept<br>・name<br>・target</td>
+            <td class="comment">入力・送信フォームを作成する際に使用する要素<br>formタグがひとつのフォームとなり、フォームの中にinputタグ、<br>selectタグ、textareaタグなどのフォーム部品を配置してフォームを作る</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;input&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・type<br>・name<br>・value<br>・size<br>・maxlength<br>・checked<br>・disabled<br>・readonly<br>・accept<br>・src<br>・alt<br>・usemap<br>・ismap<br>・align</td>
+            <td class="comment">テキスト入力欄やボタンなどの部品を作成する<br>テキストボックスは一行</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;button&gt;<br>　&lt;/button&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・type<br>・name<br>・value<br>・disabled</td>
+            <td class="comment">formタグで作成したフォームの中で汎用的にボタンを作成する<br>inputタグと同様の機能を持つ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;select&gt;<br>　&lt;/select&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・name<br>・size<br>・multiple<br>・disabled</td>
+            <td class="comment">メニュー（セレクトボックス）を作成する<br></td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;optgroup&gt;<br>　&lt;/optgroup&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・label<br>・disabled</td>
+            <td class="comment">selectタグの中で使用し、メニューの選択肢であるoptionタグを<br>グループ化する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;option&gt;<br>　&lt;/option&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・value<br>・selected<br>・label<br>・disabled</td>
+            <td class="comment">selectタグ内で使用し、メニューの選択肢を作成する要素</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;fieldset&gt;<br>　&lt;/fieldset&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type">-</td>
+            <td class="comment">formタグで定義するフォームの入力項目をグループ化する<br></td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;legend&gt;<br>　&lt;/legend&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・align</td>
+            <td class="comment">「凡例」、「説明文」、「銘」などの意味を持ち、fieldsetタグで<br>グループ化されたフォームの入力項目に対して、タイトルを付ける<br>fieldsetタグ内の先頭に1つだけ記述することが可能</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;textarea&gt;<br>　&lt;/textarea&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・cols<br>・rows<br>・name<br>・wrap<br>・disabled<br>・readonly</td>
+            <td class="comment">複数行の入力が可能な入力欄を作成する<br>textareaタグ内に入力されたテキストは、入力フィールドの<br>初期値として入力欄に表示される</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;label&gt;<br>　&lt;/label&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・for</td>
+            <td class="comment">フォームの中でフォームの項目名と構成部品（チェックボックス、<br>ラジオボタンなど）を関連付けるためのタグ</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+
+        <h3 class="heading">◎フレーム</h3>
+        <table>
+          <tr class="column">
+            <td >タグ</td>
+            <td class="gyou">終了<br>タグ</td>
+            <td class="gyou">要素</td>
+            <td>属性</td>
+            <td>概要</td>
+            <td class="gyou">用法・詳細</td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;frameset&gt;<br>　&lt;/frameset&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・rows<br>・cols<br>・border</td>
+            <td class="comment">ウインドウをいくつかのフレームに分割する際に使用する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;frame&gt;<br>　&lt;/frame&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">-</td>
+            <td class="type">・src<br>・longdesc<br>・name<br>・noresize<br>・scrolling<br>・frameborder<br>・marginwidth<br>・marginheight</td>
+            <td class="comment">ウインドウの分割を行なってフレームを設定するframesetタグの中</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;iframe&gt;<br>　&lt;/iframe&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">インライン</td>
+            <td class="type">・src<br>・longdesc<br>・name<br>・sandbox<br>・width<br>・height<br>・scrolling<br>・frameborder<br>・marginwidth<br>・marginheight<br>・align</td>
+            <td class="comment">文書の中にインラインのフレームを作成する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          <tr>
+            <td class="tag">・&lt;noframes&gt;<br>　&lt;/noframes&gt;</td>
+            <td class="closed-tag">○</td>              
+            <td class="block-or-inline">ブロック</td>
+            <td class="type"></td>
+            <td class="comment">フレームに対応していないブラウザや、ユーザーがフレームを<br>表示しない設定にしている場合に、代替の内容を表示する</td>
+            <td class="shousai-page"><a href="#">用法・詳細</a></td>
+          </tr>
+          
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        
+      </div>
+    </footer>
+  </body>
+</html>
